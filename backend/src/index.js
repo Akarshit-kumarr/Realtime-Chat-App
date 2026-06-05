@@ -20,11 +20,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://realtime-chat-app-mu-mauve.vercel.app",
+    origin: true,
+
     credentials: true,
   }),
 );
-
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
