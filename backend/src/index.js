@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://realtime-chat-app-mu-mauve.vercel.app",
+    origin: "https://realtime-chat-app-alpha-mauve.vercel.app",
     credentials: true,
   }),
 );
